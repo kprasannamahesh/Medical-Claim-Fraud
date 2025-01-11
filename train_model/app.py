@@ -8,7 +8,7 @@ from sklearn.preprocessing import LabelEncoder
 from fastapi.middleware.cors import CORSMiddleware
 from typing import Dict
 # Load the pre-trained logistic regression model
-model = joblib.load('logistic_regression_model.joblib')
+model = joblib.load('svc_regression_model.joblib')
 
 
 app = FastAPI()

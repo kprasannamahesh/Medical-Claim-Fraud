@@ -8,7 +8,7 @@ WORKDIR /train_model
 COPY . /train_model
 
 # Install the dependencies required for FastAPI and the model
-RUN pip install --no-cache-dir fastapi uvicorn joblib numpy scikit-learn
+RUN pip install --no-cache-dir fastapi uvicorn joblib numpy scikit-learn joblib pandas
 
 # Expose port 8000 for FastAPI
 EXPOSE 8000
